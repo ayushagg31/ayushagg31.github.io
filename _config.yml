@@ -1,0 +1,60 @@
+
+# SEO settings
+title: "Ayush"
+title2: "arena" 
+# default: ""
+description: "lurking in the shadows"
+#keywords: "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
+url: https://ayushagg31.github.io # site url
+baseurl: "" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+#google_analytics: UA-XXXXX-XX
+repo: http://github.com/ayushagg31/ayushagg31.github.io
+#disqus_shortname: "hnbloggithub"
+twitter_username: "aayushagg31"
+#comments: true
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Ayush Aggarwal"
+  job      : "Computer Science Student"
+  bio      : "..."
+  thumb    : /images/author.jpg
+  email    : agg.ayush.1997@gmail.com
+  url      : https://ayushagg31.github.io
+  github   : http://github.com/ayushagg31
+  twitter  : http://twitter.com/aayushagg31
+  facebook : https://www.facebook.com/Aayushagg31
+  linkedin : http://linkedin.com/in/ayush-a-b13a92120
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_site: "@aayushagg31"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
